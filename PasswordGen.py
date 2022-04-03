@@ -17,11 +17,11 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 # ScaerieTale's code #
 
 password = ""
-for char in range(1, nr_letters):
+for char in range(1, nr_letters + 1):
     password = password + random.choice(letters)
-for sym in range(1, nr_symbols):
+for sym in range(1, nr_symbols + 1):
     password = password + random.choice(symbols)
-for nums in range(1, nr_numbers):
+for nums in range(1, nr_numbers + 1):
     password = password + random.choice(numbers)
 print(f"Your password: {''.join(random.sample(password,len(password)))}")
 input("Don't forget to write down or copy it!")
