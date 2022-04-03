@@ -23,5 +23,5 @@ for sym in range(1, nr_symbols):
     password = password + random.choice(symbols)
 for nums in range(1, nr_numbers):
     password = password + random.choice(numbers)
-print(password)
 print(f"Your password: {''.join(random.sample(password,len(password)))}")
+input("Don't forget to write down or copy it!")
